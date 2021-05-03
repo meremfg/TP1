@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 offset-3">
+      <form [formGroup]='carForm'>
+        <div class="form-group">
+          <label>Matricule</label>
+          <input type="text" class="form-control" [formControl]='Matricule'>
+        </div>
+       
+        <div class="form-group">
+          <label>NumeroImmatriculation</label>
+          <input type="text" class="form-control" [formControl]='NumeroImmatriculation'>
+        </div>
+     
+        <div class="form-group">
+          <label>NumberSiege</label>
+          <input type="NumberSiege" class="form-control" [formControl]='NumberSiege'>
+        </div>
+       
+        <div class="form-group">
+          <label>Tickets</label>
+          <input type="Tickets" class="form-control" [formControl]='Tickets'>
+        </div>
+      
+        <div class="form-group">
+          <label>Couleur</label>
+          <input type="Couleur" class="form-control" [formControl]='Couleur'>
+        </div>
+
+        <button type="submit" class="btn btn-primary" (click)='onCreate()' [disabled]="contactForm.invalid">Creer</button>
+      </form>
+      
+     
+    </div>
+  </div>
+</div>
+
